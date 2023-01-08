@@ -31,8 +31,7 @@ class GameActivity : AppCompatActivity() {
         setContentView(binding.root)
         initBoard()
 
-        val button: Button = findViewById(R.id.mainButton)
-        button.setOnClickListener {
+        binding.mainButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
